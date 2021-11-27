@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactTyped from 'react-typed';
 import IntroStyle from './Intro.styles';
 import Pacman from '../assets/images/pacman.png';
 import Arrow from '../assets/images/arrow.png';

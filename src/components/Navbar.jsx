@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
 import NavbarStyle from './Navbar.style';
 
 const Navbar = ({ open }) => {
   return (
     <>
-      
       <NavbarStyle open={open}>
         <ul>
           <li>
@@ -18,7 +16,6 @@ const Navbar = ({ open }) => {
           </li>
         </ul>
       </NavbarStyle>
-      
     </>
   );
 };

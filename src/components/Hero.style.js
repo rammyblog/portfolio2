@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import BackgroundHeader from '../assets/images/header.png';
 import { device } from '../helpers/mediaQueries';
 
 const HeroStyle = styled.div`

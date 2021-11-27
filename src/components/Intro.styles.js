@@ -4,7 +4,7 @@ import { device } from '../helpers/mediaQueries';
 const IntroStyle = styled.div`
   color: #fff;
   height: 100vh;
-  postion: relative;
+  position: relative;
 
   .pacman {
     position: absolute;
@@ -21,7 +21,7 @@ const IntroStyle = styled.div`
     position: relative;
   }
   .intro {
-    font-family: Clash Display;
+    font-family: 'Clash Display', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 2.25rem;
@@ -33,7 +33,7 @@ const IntroStyle = styled.div`
   }
 
   .name {
-    font-family: Clash Display;
+    font-family: 'Clash Display', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 6rem;
