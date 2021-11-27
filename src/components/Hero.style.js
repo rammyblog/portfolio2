@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import BackgroundHeader from '../assets/images/header.png';
+import { device } from '../helpers/mediaQueries';
 
 const HeroStyle = styled.div`
   min-height: 100vh;
@@ -24,6 +25,14 @@ const HeroStyle = styled.div`
     top: 0;
     right: 150px;
     z-index: 9999;
+  }
+
+  @media only screen and ${device.mobile} {
+    .menu {
+      right: 0;
+      width: 50px;
+      height: 50px;
+    }
   }
 `;
 

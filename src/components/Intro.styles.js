@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { device } from '../helpers/mediaQueries';
 
 const IntroStyle = styled.div`
   color: #fff;
   height: 100vh;
   postion: relative;
+
   .pacman {
     position: absolute;
     top: 108px;
@@ -22,7 +24,7 @@ const IntroStyle = styled.div`
     font-family: Clash Display;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 44px;
     letter-spacing: 0.03em;
 
@@ -34,7 +36,7 @@ const IntroStyle = styled.div`
     font-family: Clash Display;
     font-style: normal;
     font-weight: bold;
-    font-size: 96px;
+    font-size: 6rem;
     line-height: 118px;
 
     /* identical to box height */
@@ -104,6 +106,68 @@ const IntroStyle = styled.div`
     }
     & img {
       margin-left: 12px;
+    }
+  }
+
+  @media only screen and ${device.laptop} {
+    .name {
+      font-size: 5rem;
+    }
+
+    .bio {
+      right: 0;
+    }
+
+    .pacman {
+      left: 140px;
+    }
+  }
+
+  @media only screen and ${device.tablet} {
+    .name {
+      font-size: 3.7rem;
+    }
+    .bio {
+      width: 60%;
+      text-align: justify;
+    }
+  }
+
+  @media only screen and ${device.mobile} {
+    .name {
+      font-size: 2rem;
+    }
+    .bio {
+      width: 100%;
+    }
+
+    .pacman {
+      left: 50px;
+    }
+
+    .work-section {
+      left: 30px;
+    }
+
+    .intro {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media only screen and ${device.iPhoneX} {
+    .name {
+      font-size: 1.5rem;
+    }
+    .bio {
+      font-size: 0.8rem;
+    }
+
+    .pacman {
+      left: 50px;
+    }
+
+    .work-section {
+      left: 30px;
     }
   }
 `;
