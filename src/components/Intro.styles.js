@@ -112,6 +112,7 @@ const IntroStyle = styled.div`
   @media only screen and ${device.laptop} {
     .name {
       font-size: 5rem;
+      line-height: normal;
     }
 
     .bio {
@@ -136,6 +137,7 @@ const IntroStyle = styled.div`
   @media only screen and ${device.mobile} {
     .name {
       font-size: 2rem;
+      margin-bottom: 10px;
     }
     .bio {
       width: 100%;
@@ -156,7 +158,7 @@ const IntroStyle = styled.div`
 
   @media only screen and ${device.iPhoneX} {
     .name {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
     .bio {
       font-size: 0.8rem;
