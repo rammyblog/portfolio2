@@ -1,52 +1,52 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import ActiveBg from '../assets/images/active-bg.png';
 
 const NavbarStyle = styled.div`
-  padding: 1rem;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  .logo {
-    font-family: Homemade Apple, cursive;
+  ${(props) =>
+    props.open
+      ? css`
+          transform: translateY(0px);
+          transition: transform 1s ease-in, visibility 0s;
+          visibility: visible;
+        `
+      : css`
+          transform: translateY(1500px);
+          transition: transform 2s ease-out, visibility 1s;
+          visibility: hidden;
+        `}
+
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+  li {
+    margin-top: 73px;
+  }
+  a {
+    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 36px;
+    line-height: 44px;
 
     /* identical to box height */
-    letter-spacing: 0.1em;
+
     color: #000000;
-  }
-  ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: end;
-    margin-right: 59px;
-  }
-  li:last-child {
-    color: #fff;
-    z-index: 1;
-  }
-  li:not(:last-child) {
-    margin-right: 44px;
-  }
+    text-decoration: none;
 
-  li a {
-    // width: 100%;
-    display: block;
-  }
-
-  .active {
-  }
-
-  .box {
-    position: absolute;
-    width: 154px;
-    height: 62px;
-    right: 0;
-    top: 0px;
-    background: #a0b6ef;
-    color: #fff;
+    &:hover {
+      border-bottom: 3px solid #000000;
+    }
   }
 `;
 

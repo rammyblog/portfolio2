@@ -1,43 +1,31 @@
 import React from 'react';
 import ReactTyped from 'react-typed';
 import IntroStyle from './Intro.styles';
-import Babatunde from '../assets/images/babatunde.png';
+import Pacman from '../assets/images/pacman.png';
+import Arrow from '../assets/images/arrow.png';
 
 function Intro() {
   return (
     <IntroStyle>
+      <img src={Pacman} alt="Pacman" className="pacman" />
       <div className="name-section">
-        <h1 className="name">
-          Hey👋🏾! I'm <span className="name-span">Babatunde</span>
-        </h1>
-        <ReactTyped
-          strings={[
-            "I'm a full-stack developer.",
-            'Motivated, Passionate, Talented',
-          ]}
-          loop={true}
-          typeSpeed={50}
-          backSpeed={20}
-          backDelay={3000}
-          smartBackspace={false}
-          cursorChar={'_'}
-          className="typed"
-        />
-        <div className="social-icons">
-          <i class="fab fa-github"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fas fa-envelope"></i>
+        <p className="intro">Hello there,</p>
+        <div className="gradient"></div>
+        <p className="name">I’m Babatunde</p>
+        <div className="pull-right">
+          <p className="bio">
+            I'm a motivated full stack engineer 🧑🏽‍💻 with great passion for
+            building excellent softwares. I build fun stuffs using mostly Python
+            and JavaScript. I offer strong aptitude for learning new
+            technologies, and a proven track record of meeting aggressive goals.
+          </p>
         </div>
-        <button className="btn">
-          <i class="fas fa-download"></i>Download My Resume
-        </button>
       </div>
-      <div className="image-section">
-        <div className="image-circle">
-          <img src={Babatunde} alt="Babatunde" />
-        </div>
-        <div className="ellipse"></div>
+      <div className="work-section">
+        <div className="brown-circle"></div>
+        <a className="work-link" href="#">
+          Check out my work <img src={Arrow} alt="arrow" />
+        </a>
       </div>
     </IntroStyle>
   );

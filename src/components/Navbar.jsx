@@ -1,29 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavbarStyle from './Navbar.style';
 
-const Navbar = () => {
+const Navbar = ({ open }) => {
   return (
-    <NavbarStyle>
-      <div className='logo'>Babatunde Onasanya</div>
-      <ul>
-        <li>
-          <a className="active">Home</a>
-        </li>
-        <li>
-          <a className="">About</a>
-        </li>
-        <li>
-          <a>Skills</a>
-        </li>
-        <li>
-          <a>Works</a>
-        </li>
-        <li>
-          <a>Contact</a>
-        </li>
-      </ul>
-      <div className="box"></div>
-    </NavbarStyle>
+    <>
+      
+      <NavbarStyle open={open}>
+        <ul>
+          <li>
+            <a href="#">Work</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </NavbarStyle>
+      
+    </>
   );
 };
 

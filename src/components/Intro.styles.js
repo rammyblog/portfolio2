@@ -1,90 +1,110 @@
 import styled from 'styled-components';
 
 const IntroStyle = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 4rem;
+  color: #fff;
+  height: 100vh;
+  postion: relative;
+  .pacman {
+    position: absolute;
+    top: 108px;
+    left: 189px;
+  }
   .name-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .name {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 77px;
-    letter-spacing: 0.01em;
-
-    color: rgba(0, 0, 0, 0.6);
-  }
-  .name-span {
-    color: #a0b6ef;
-  }
-
-  .typed {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: 0.01em;
-
-    color: rgba(0, 0, 0, 0.6);
-  }
-  .image-section {
+    margin: auto;
+    width: 60%;
+    height: 60vh;
     position: relative;
   }
-  .image-circle img {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  .ellipse {
-    background: #a0b6ef;
-    filter: blur(200px);
-    width: 398px;
-    height: 406px;
-    position: absolute;
-    top: 13rem;
-    z-index: -1;
-    left: 50px;
+  .intro {
+    font-family: Clash Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+
+    color: #edff7d;
+    margin-bottom: 0;
   }
 
-  .btn {
-    font-family: Inter;
-    display: flex;
-    align-items: center;
-    padding: 21px 30px;
-    width: 256px;
-    height: 76px;
-    background: #8092bf;
-    border: 1px solid #a0b6ef;
-    box-sizing: border-box;
-    border-radius: 100px;
-    color: #fff;
-    font-weight: 500;
+  .name {
+    font-family: Clash Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 118px;
+
+    /* identical to box height */
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+    margin: 0;
+  }
+  .pull-right {
+    position: relative;
+  }
+  .bio {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 0.01em;
-    color: #fcfcfc;
-    margin-top: 6rem;
+    line-height: 22px;
+
+    color: #ffffff;
+    width: 45%;
+    margin-right: 0;
+    position: absolute;
+    right: 112px;
+    top: -11px;
   }
-  .btn i {
-    color: #fff;
-    margin-right: 5px;
+
+  .gradient {
+    background: #e8ff5a;
+    opacity: 0.5;
+    filter: blur(200px);
+    border-radius: 50px;
+    position: absolute;
+    bottom: 147px;
+    width: 193px;
+    height: 193px;
   }
-  .social-icons {
+  .work-section {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
-    margin-top: 2rem;
+
+    align-items: center;
+    position: absolute;
+    bottom: 70px;
+    left: 158px;
   }
-  .social-icons i {
-    color: #a0b6ef;
-    font-size: 30px;
+  .brown-circle {
+    background: rgba(0, 0, 0, 0.35);
+    width: 77px;
+    height: 77px;
+    border-radius: 38.5px;
+  }
+
+  .work-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: -40px;
+    /* identical to box height */
+
+    color: #ffffff;
+    text-decoration: none;
+
+    :hover {
+      text-decoration: none;
+      color: #fff;
+    }
+    & img {
+      margin-left: 12px;
+    }
   }
 `;
 
