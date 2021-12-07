@@ -1,15 +1,15 @@
 import NavbarStyle from './Navbar.style';
 
-const Navbar = ({ open }) => {
+const Navbar = () => {
   return (
     <>
-      <NavbarStyle open={open}>
+      <NavbarStyle>
         <ul>
           <li>
-            <a href="#">Work</a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#">Work</a>
           </li>
           <li>
             <a href="#">Contact</a>

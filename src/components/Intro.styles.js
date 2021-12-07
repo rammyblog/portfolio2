@@ -4,63 +4,53 @@ import { device } from '../helpers/mediaQueries';
 const IntroStyle = styled.div`
   color: #fff;
   height: 100vh;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  .pacman {
-    position: absolute;
-    top: 108px;
-    left: 189px;
-  }
-  .name-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: 60%;
-    height: 60vh;
-    position: relative;
-  }
-  .intro {
-    font-family: 'Clash Display', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2.25rem;
-    line-height: 44px;
-    letter-spacing: 0.03em;
-
-    color: #edff7d;
-    margin-bottom: 0;
-  }
-
-  .name {
-    font-family: 'Clash Display', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 6rem;
-    line-height: 118px;
-
-    /* identical to box height */
-    letter-spacing: 0.03em;
-
-    color: #ffffff;
-    margin: 0;
-  }
-  .pull-right {
-    position: relative;
-  }
-  .bio {
+  .intro-section {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 20px;
+    color: #333333;
+    width: 30%;
+    margin: 0;
+    margin-left: 160px;
+  }
 
-    color: #ffffff;
-    width: 45%;
-    margin-right: 0;
-    position: absolute;
-    right: 112px;
-    top: -11px;
+  .name {
+    font-family: Clash Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 63px;
+    color: #000000;
+    margin: 0;
+  }
+
+  .summary {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  .work-btn {
+    background: #eebb06;
+    box-shadow: 0px 4px 30px rgba(238, 187, 6, 0.2);
+    border-radius: 30px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height */
+
+    color: #000000;
+    padding: 20px 34px;
   }
 
   .gradient {
@@ -73,39 +63,15 @@ const IntroStyle = styled.div`
     width: 193px;
     height: 193px;
   }
-  .work-section {
-    display: flex;
-
-    align-items: center;
+  .picture-section {
+    margin-right: 105px;
     position: absolute;
-    bottom: 70px;
-    left: 158px;
-  }
-  .brown-circle {
-    background: rgba(0, 0, 0, 0.35);
-    width: 77px;
-    height: 77px;
-    border-radius: 38.5px;
-  }
+    top: -41px;
+    right: 0;
 
-  .work-link {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    margin-left: -40px;
-    /* identical to box height */
-
-    color: #ffffff;
-    text-decoration: none;
-
-    :hover {
-      text-decoration: none;
-      color: #fff;
-    }
-    & img {
-      margin-left: 12px;
+    img {
+      width: 100%;
+      height: 80vh;
     }
   }
 
@@ -117,10 +83,6 @@ const IntroStyle = styled.div`
 
     .bio {
       right: 0;
-    }
-
-    .pacman {
-      left: 140px;
     }
   }
 
@@ -141,10 +103,6 @@ const IntroStyle = styled.div`
     }
     .bio {
       width: 100%;
-    }
-
-    .pacman {
-      left: 50px;
     }
 
     .work-section {

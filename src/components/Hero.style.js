@@ -3,20 +3,8 @@ import { device } from '../helpers/mediaQueries';
 
 const HeroStyle = styled.div`
   min-height: 100vh;
-  background: #e72222;
-
-  .lines {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-  }
-
-  .line {
-    border-left: 1px solid #ffffff;
-    opacity: 0.1;
-  }
+  background: #ffffff;
+  position: relative;
 
   .menu {
     cursor: pointer;
